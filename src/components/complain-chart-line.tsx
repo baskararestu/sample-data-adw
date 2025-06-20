@@ -3,13 +3,22 @@
 import { AreaChart, Area, XAxis, Tooltip, ResponsiveContainer, CartesianGrid } from "recharts";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
+type DataItem = {
+  lama_jam: number;
+};
+
+type InputData = {
+  date: string;
+  data: DataItem[];
+};
+
 type Props = {
-  data: any[];
+  data: InputData[];
 };
 
 export function ComplaintChartLine({ data }: Props) {
   const transformed = data.map((entry) => {
-    const total = entry.data.reduce((sum: number, item: any) => sum + item.lama_jam, 0);
+    const total = entry.data.reduce((sum, item) => sum + item.lama_jam, 0);
     return {
       date: entry.date,
       total_duration: total,

@@ -18,10 +18,9 @@ type Props = {
     picName: string;
     totalDuration: number;
   }[];
-  allPicNames: string[];
 };
 
-export function ComplaintChartPieDonutWeekly({ picPerformanceData, allPicNames }: Props) {
+export function ComplaintChartPieDonutWeekly({ picPerformanceData }: Props) {
   const colorMap: Record<string, string> = {
     "Galih Nurdiansyah": "#2563eb",
     "Sinta Lestari": "#82ca9d",
@@ -48,6 +47,7 @@ export function ComplaintChartPieDonutWeekly({ picPerformanceData, allPicNames }
       color: item.fill,
     };
     return acc;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
   }, {} as any);
 
   const totalDuration = chartData.reduce((sum, item) => sum + item.duration, 0);

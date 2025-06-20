@@ -5,7 +5,6 @@ import { FilterBar } from "@/components/filter-bar";
 import { ComplaintChartBarWeekly } from "@/components/complaint-chart-bar-weekly";
 import { ComplaintChartBarPICPerformance } from "@/components/complain-chart-bar-pic-performance";
 import { TransformedChartData } from "@/types/chart-types";
-import { ComplaintChartLineWeekly } from "@/components/complaint-chart-line-weekly";
 import { ComplaintChartPieDonutWeekly } from "@/components/complaint-chart-pie-donut-weekly";
 
 type ChartRow = {
@@ -54,11 +53,9 @@ export default function DashboardPage() {
     const chartDataWeekly = data.map((row) => {
       const { week, ...others } = row;
       const formattedWeekLabel = formatWeekLabel(week);
-      // @ts-ignore
       const chartRow: TransformedChartData = { date: formattedWeekLabel };
 
       Object.entries(others).forEach(([picKey, duration]) => {
-        // @ts-ignore
         chartRow[picKey] = duration;
         picKeysInChart.add(picKey);
         totalDurationSum += Number(duration);
@@ -111,7 +108,7 @@ export default function DashboardPage() {
     <div className="p-4 space-y-6">
       <FilterBar area={area} setArea={setArea} selectedPIC={selectedPIC} setSelectedPIC={setSelectedPIC} />
       <ComplaintChartBarWeekly data={processedChartData.chartData} picNames={processedChartData.picNames} totalComplaintsDuration={processedChartData.totalComplaintsDuration} />
-      <ComplaintChartPieDonutWeekly picPerformanceData={processedChartData.picPerformanceData} allPicNames={allAvailablePics} />
+      <ComplaintChartPieDonutWeekly picPerformanceData={processedChartData.picPerformanceData} />
       <ComplaintChartBarPICPerformance data={processedChartData.picPerformanceData} allPicNames={allAvailablePics} />
     </div>
   );
@@ -119,7 +116,7 @@ export default function DashboardPage() {
 
 function formatWeekLabel(label: string) {
   const [start, end] = label.split("_to_");
-  const [y1, m1, d1] = start.split("-");
-  const [y2, m2, d2] = end.split("-");
+  const [m1, d1] = start.split("-");
+  const [m2, d2] = end.split("-");
   return `${d1}-${m1} s.d. ${d2}-${m2}`;
 }

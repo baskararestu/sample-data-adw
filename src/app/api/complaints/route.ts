@@ -5,26 +5,44 @@ import complaintDummy from "@/data/complaint-dummy.json";
 
 const prisma = new PrismaClient();
 
+type Complaint = {
+  area: string;
+  picHandlingComplain: string;
+  complaintDurationHours: number;
+  timeStartComplain: Date;
+  timeCloseComplain: Date;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any;
+};
+
+type ComplaintDummyItem = Omit<Complaint, "timeStartComplain" | "timeCloseComplain"> & {
+  timeStartComplain: string;
+  timeCloseComplain: string;
+};
+
 export async function GET(req: Request) {
   const { area, pic, weekly } = Object.fromEntries(new URL(req.url).searchParams);
 
-  const where: any = {};
+  const where: Record<string, string> = {};
   if (area && area !== "All") where.area = area;
   if (pic && pic !== "All") where.picHandlingComplain = pic;
 
   console.log("Backend filter where:", where);
 
-  let items: any[] = [];
+  let items: Complaint[] = [];
 
   try {
     items = await prisma.complaint.findMany({ where });
   } catch (error) {
     console.error("❌ Gagal koneksi ke database, fallback ke dummy:", error);
-    items = complaintDummy.map((item: any) => ({
-      ...item,
-      timeStartComplain: parse(item.timeStartComplain, "dd-MM-yyyy HH:mm", new Date()),
-      timeCloseComplain: parse(item.timeCloseComplain, "dd-MM-yyyy HH:mm", new Date()),
-    }));
+    items = (complaintDummy as ComplaintDummyItem[]).map(
+      (item) =>
+        ({
+          ...item,
+          timeStartComplain: parse(item.timeStartComplain, "dd-MM-yyyy HH:mm", new Date()),
+          timeCloseComplain: parse(item.timeCloseComplain, "dd-MM-yyyy HH:mm", new Date()),
+        } as Complaint)
+    );
 
     items = items.filter((item) => {
       const matchArea = !where.area || item.area === where.area;
@@ -34,7 +52,7 @@ export async function GET(req: Request) {
   }
 
   if (weekly === "true") {
-    const grouped: Record<string, any[]> = {};
+    const grouped: Record<string, Complaint[]> = {};
     items.forEach((c) => {
       const start = startOfWeek(new Date(c.timeStartComplain), { weekStartsOn: 1 });
       const end = endOfWeek(new Date(c.timeStartComplain), { weekStartsOn: 1 });
@@ -44,10 +62,10 @@ export async function GET(req: Request) {
     });
 
     const result = Object.entries(grouped).map(([week, arr]) => {
-      const aggregated: any = { week };
+      const aggregated: Record<string, number | string> = { week };
       arr.forEach((c) => {
         const key = c.picHandlingComplain.replace(/\s/g, "_").toLowerCase();
-        aggregated[key] = (aggregated[key] || 0) + c.complaintDurationHours;
+        aggregated[key] = ((aggregated[key] || 0) as number) + c.complaintDurationHours;
       });
       return aggregated;
     });
