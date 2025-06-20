@@ -1,9 +1,6 @@
 import { NextResponse } from "next/server";
-import { PrismaClient } from "@prisma/client";
 import { startOfWeek, endOfWeek, parse } from "date-fns";
 import complaintDummy from "@/data/complaint-dummy.json";
-
-const prisma = new PrismaClient();
 
 type Complaint = {
   area: string;
@@ -27,29 +24,20 @@ export async function GET(req: Request) {
   if (area && area !== "All") where.area = area;
   if (pic && pic !== "All") where.picHandlingComplain = pic;
 
-  console.log("Backend filter where:", where);
+  let items: Complaint[] = (complaintDummy as ComplaintDummyItem[]).map(
+    (item) =>
+      ({
+        ...item,
+        timeStartComplain: parse(item.timeStartComplain, "dd-MM-yyyy HH:mm", new Date()),
+        timeCloseComplain: parse(item.timeCloseComplain, "dd-MM-yyyy HH:mm", new Date()),
+      } as Complaint)
+  );
 
-  let items: Complaint[] = [];
-
-  try {
-    items = await prisma.complaint.findMany({ where });
-  } catch (error) {
-    console.error("❌ Gagal koneksi ke database, fallback ke dummy:", error);
-    items = (complaintDummy as ComplaintDummyItem[]).map(
-      (item) =>
-        ({
-          ...item,
-          timeStartComplain: parse(item.timeStartComplain, "dd-MM-yyyy HH:mm", new Date()),
-          timeCloseComplain: parse(item.timeCloseComplain, "dd-MM-yyyy HH:mm", new Date()),
-        } as Complaint)
-    );
-
-    items = items.filter((item) => {
-      const matchArea = !where.area || item.area === where.area;
-      const matchPIC = !where.picHandlingComplain || item.picHandlingComplain === where.picHandlingComplain;
-      return matchArea && matchPIC;
-    });
-  }
+  items = items.filter((item) => {
+    const matchArea = !where.area || item.area === where.area;
+    const matchPIC = !where.picHandlingComplain || item.picHandlingComplain === where.picHandlingComplain;
+    return matchArea && matchPIC;
+  });
 
   if (weekly === "true") {
     const grouped: Record<string, Complaint[]> = {};
