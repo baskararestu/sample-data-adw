@@ -13,8 +13,8 @@ type ChartRow = {
 };
 
 export default function DashboardPage() {
-  const [area, setArea] = useState("All");
-  const [selectedPIC, setSelectedPIC] = useState("All");
+  const [area, setArea] = useState("");
+  const [selectedPIC, setSelectedPIC] = useState("");
   const [data, setData] = useState<ChartRow[]>([]);
   const [loading, setLoading] = useState(true);
 

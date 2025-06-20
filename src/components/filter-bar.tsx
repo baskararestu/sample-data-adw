@@ -19,7 +19,6 @@ export function FilterBar({ area, setArea, selectedPIC, setSelectedPIC }: Props)
           <SelectValue placeholder="Pilih Area" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="All">All</SelectItem>
           <SelectItem value="East">East</SelectItem>
           <SelectItem value="Jabo">Jabo</SelectItem>
           <SelectItem value="North">North</SelectItem>
