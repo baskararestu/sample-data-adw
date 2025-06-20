@@ -1,0 +1,402 @@
+[
+  {
+    "idCustomer": "C001",
+    "companyName": "PT Andalan Teknologi",
+    "area": "East",
+    "timeStartComplain": "01-06-2025 08:15",
+    "timeCloseComplain": "03-06-2025 10:30",
+    "complaintDurationHours": 50.3,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C002",
+    "companyName": "CV Bintang Mandiri",
+    "area": "Jabo",
+    "timeStartComplain": "02-06-2025 14:00",
+    "timeCloseComplain": "06-06-2025 09:00",
+    "complaintDurationHours": 91.0,
+    "picHandlingComplain": "Sinta Lestari",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C003",
+    "companyName": "PT Clara Energi",
+    "area": "East",
+    "timeStartComplain": "05-06-2025 09:45",
+    "timeCloseComplain": "07-06-2025 11:15",
+    "complaintDurationHours": 49.5,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C004",
+    "companyName": "PT Daya Sentosa",
+    "area": "Jabo",
+    "timeStartComplain": "03-06-2025 07:00",
+    "timeCloseComplain": "09-06-2025 13:20",
+    "complaintDurationHours": 150.3,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C005",
+    "companyName": "CV Eka Solusi",
+    "area": "East",
+    "timeStartComplain": "04-06-2025 10:00",
+    "timeCloseComplain": "04-06-2025 16:00",
+    "complaintDurationHours": 6.0,
+    "picHandlingComplain": "Bima Ramadhan",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C006",
+    "companyName": "PT Farhan Logistic",
+    "area": "Jabo",
+    "timeStartComplain": "06-06-2025 08:00",
+    "timeCloseComplain": "10-06-2025 08:00",
+    "complaintDurationHours": 96.0,
+    "picHandlingComplain": "Maria Fransisca",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C007",
+    "companyName": "PT Global Niaga",
+    "area": "East",
+    "timeStartComplain": "07-06-2025 12:00",
+    "timeCloseComplain": "08-06-2025 06:00",
+    "complaintDurationHours": 18.0,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C008",
+    "companyName": "PT Hendra Steel",
+    "area": "East",
+    "timeStartComplain": "08-06-2025 09:30",
+    "timeCloseComplain": "12-06-2025 15:45",
+    "complaintDurationHours": 102.25,
+    "picHandlingComplain": "Aldi Suryana",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C009",
+    "companyName": "CV Intan Furniture",
+    "area": "East",
+    "timeStartComplain": "10-06-2025 08:20",
+    "timeCloseComplain": "15-06-2025 13:00",
+    "complaintDurationHours": 124.7,
+    "picHandlingComplain": "Farah Annisa",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C010",
+    "companyName": "PT Joko Teknik",
+    "area": "Jabo",
+    "timeStartComplain": "11-06-2025 14:45",
+    "timeCloseComplain": "14-06-2025 11:15",
+    "complaintDurationHours": 68.5,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C011",
+    "companyName": "PT Kevin Solutions",
+    "area": "Jabo",
+    "timeStartComplain": "13-06-2025 09:00",
+    "timeCloseComplain": "17-06-2025 09:00",
+    "complaintDurationHours": 96.0,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C012",
+    "companyName": "CV Lestari Mulya",
+    "area": "Jabo",
+    "timeStartComplain": "12-06-2025 13:00",
+    "timeCloseComplain": "13-06-2025 08:00",
+    "complaintDurationHours": 19.0,
+    "picHandlingComplain": "Wahyu Hidayat",
+    "timeShifting": "Shift 12"
+  },
+  {
+    "idCustomer": "C013",
+    "companyName": "PT Marwan Persada",
+    "area": "West",
+    "timeStartComplain": "09-06-2025 11:30",
+    "timeCloseComplain": "11-06-2025 11:30",
+    "complaintDurationHours": 48.0,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C014",
+    "companyName": "PT Nia Elektronik",
+    "area": "North",
+    "timeStartComplain": "15-06-2025 07:45",
+    "timeCloseComplain": "17-06-2025 08:00",
+    "complaintDurationHours": 48.25,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 12"
+  },
+  {
+    "idCustomer": "C015",
+    "companyName": "PT Oktaviani Jaya",
+    "area": "Area",
+    "timeStartComplain": "14-06-2025 10:00",
+    "timeCloseComplain": "20-06-2025 09:00",
+    "complaintDurationHours": 143.0,
+    "picHandlingComplain": "Farah Annisa",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C003",
+    "companyName": "PT Clara Energi",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 08:00",
+    "timeCloseComplain": "17-06-2025 08:30",
+    "complaintDurationHours": 24.5,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 12"
+  },
+  {
+    "idCustomer": "C007",
+    "companyName": "PT Global Niaga",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 13:15",
+    "timeCloseComplain": "18-06-2025 11:00",
+    "complaintDurationHours": 45.75,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C016",
+    "companyName": "CV Putra Bangun",
+    "area": "North",
+    "timeStartComplain": "10-06-2025 15:00",
+    "timeCloseComplain": "13-06-2025 09:00",
+    "complaintDurationHours": 66.0,
+    "picHandlingComplain": "Shinta Wahyuni",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C017",
+    "companyName": "PT Qory Digital",
+    "area": "North",
+    "timeStartComplain": "12-06-2025 08:00",
+    "timeCloseComplain": "16-06-2025 08:00",
+    "complaintDurationHours": 96.0,
+    "picHandlingComplain": "Farah Annisa",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C018",
+    "companyName": "PT Rian Telekomunikasi",
+    "area": "East",
+    "timeStartComplain": "13-06-2025 11:00",
+    "timeCloseComplain": "15-06-2025 14:00",
+    "complaintDurationHours": 51.0,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C001",
+    "companyName": "PT Andalan Teknologi",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 08:10",
+    "timeCloseComplain": "16-06-2025 10:30",
+    "complaintDurationHours": 2.3,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C003",
+    "companyName": "PT Clara Energi",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 11:20",
+    "timeCloseComplain": "16-06-2025 14:50",
+    "complaintDurationHours": 3.5,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C005",
+    "companyName": "CV Eka Solusi",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 09:00",
+    "timeCloseComplain": "16-06-2025 11:00",
+    "complaintDurationHours": 2.0,
+    "picHandlingComplain": "Bima Ramadhan",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C007",
+    "companyName": "PT Global Niaga",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 15:30",
+    "timeCloseComplain": "16-06-2025 17:00",
+    "complaintDurationHours": 1.5,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C011",
+    "companyName": "PT Kevin Solutions",
+    "area": "Jabo",
+    "timeStartComplain": "16-06-2025 13:00",
+    "timeCloseComplain": "16-06-2025 18:45",
+    "complaintDurationHours": 5.75,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C013",
+    "companyName": "PT Marwan Persada",
+    "area": "West",
+    "timeStartComplain": "16-06-2025 10:30",
+    "timeCloseComplain": "16-06-2025 12:30",
+    "complaintDurationHours": 2.0,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C018",
+    "companyName": "PT Rian Telekomunikasi",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 16:00",
+    "timeCloseComplain": "16-06-2025 19:30",
+    "complaintDurationHours": 3.5,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C005",
+    "companyName": "CV Eka Solusi",
+    "area": "East",
+    "timeStartComplain": "16-06-2025 09:00",
+    "timeCloseComplain": "16-06-2025 11:00",
+    "complaintDurationHours": 2.0,
+    "picHandlingComplain": "Bima Ramadhan",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C002",
+    "companyName": "CV Bintang Mandiri",
+    "area": "Jabo",
+    "timeStartComplain": "17-06-2025 09:20",
+    "timeCloseComplain": "17-06-2025 12:00",
+    "complaintDurationHours": 2.67,
+    "picHandlingComplain": "Sinta Lestari",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C003",
+    "companyName": "PT Clara Energi",
+    "area": "East",
+    "timeStartComplain": "17-06-2025 13:00",
+    "timeCloseComplain": "17-06-2025 17:00",
+    "complaintDurationHours": 4.0,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C006",
+    "companyName": "PT Farhan Logistic",
+    "area": "Jabo",
+    "timeStartComplain": "17-06-2025 08:45",
+    "timeCloseComplain": "17-06-2025 11:15",
+    "complaintDurationHours": 2.5,
+    "picHandlingComplain": "Maria Fransisca",
+    "timeShifting": "Shift 2"
+  },
+  {
+    "idCustomer": "C007",
+    "companyName": "PT Global Niaga",
+    "area": "East",
+    "timeStartComplain": "17-06-2025 15:30",
+    "timeCloseComplain": "17-06-2025 18:30",
+    "complaintDurationHours": 3.0,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C014",
+    "companyName": "PT Nia Elektronik",
+    "area": "North",
+    "timeStartComplain": "17-06-2025 10:10",
+    "timeCloseComplain": "17-06-2025 14:00",
+    "complaintDurationHours": 3.83,
+    "picHandlingComplain": "Deni Kurniawan",
+    "timeShifting": "Shift 12"
+  },
+  {
+    "idCustomer": "C017",
+    "companyName": "PT Qory Digital",
+    "area": "North",
+    "timeStartComplain": "17-06-2025 08:30",
+    "timeCloseComplain": "17-06-2025 12:00",
+    "complaintDurationHours": 3.5,
+    "picHandlingComplain": "Farah Annisa",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C004",
+    "companyName": "PT Daya Sentosa",
+    "area": "Jabo",
+    "timeStartComplain": "18-06-2025 07:00",
+    "timeCloseComplain": "18-06-2025 10:15",
+    "complaintDurationHours": 3.25,
+    "picHandlingComplain": "Galih Nurdiansyah",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C008",
+    "companyName": "PT Hendra Steel",
+    "area": "East",
+    "timeStartComplain": "18-06-2025 09:30",
+    "timeCloseComplain": "18-06-2025 12:45",
+    "complaintDurationHours": 3.25,
+    "picHandlingComplain": "Aldi Suryana",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C009",
+    "companyName": "CV Intan Furniture",
+    "area": "East",
+    "timeStartComplain": "18-06-2025 11:00",
+    "timeCloseComplain": "18-06-2025 15:00",
+    "complaintDurationHours": 4.0,
+    "picHandlingComplain": "Farah Annisa",
+    "timeShifting": "Shift 3"
+  },
+  {
+    "idCustomer": "C012",
+    "companyName": "CV Lestari Mulya",
+    "area": "Jabo",
+    "timeStartComplain": "18-06-2025 13:15",
+    "timeCloseComplain": "18-06-2025 14:45",
+    "complaintDurationHours": 1.5,
+    "picHandlingComplain": "Wahyu Hidayat",
+    "timeShifting": "Shift 12"
+  },
+  {
+    "idCustomer": "C015",
+    "companyName": "PT Oktaviani Jaya",
+    "area": "Area",
+    "timeStartComplain": "18-06-2025 14:00",
+    "timeCloseComplain": "18-06-2025 18:00",
+    "complaintDurationHours": 4.0,
+    "picHandlingComplain": "Farah Annisa",
+    "timeShifting": "Shift 1"
+  },
+  {
+    "idCustomer": "C016",
+    "companyName": "CV Putra Bangun",
+    "area": "North",
+    "timeStartComplain": "18-06-2025 08:00",
+    "timeCloseComplain": "18-06-2025 10:30",
+    "complaintDurationHours": 2.5,
+    "picHandlingComplain": "Shinta Wahyuni",
+    "timeShifting": "Shift 3"
+  }
+]
